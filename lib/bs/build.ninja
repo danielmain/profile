@@ -1,13 +1,13 @@
-g_root = /Users/daniel/Workspace/danielmain
+g_root = /Users/daniel/Workspace/profile
 rule astj
-  command = /Users/daniel/Workspace/danielmain/node_modules/bs-platform/darwin/bsc.exe  -bs-v 8.3.3 -bs-jsx 3 -bs-super-errors -bs-no-version-header -bs-ast -o $out $i
+  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe  -bs-v 8.3.3 -bs-jsx 3 -bs-super-errors -bs-no-version-header -bs-ast -o $out $i
 o src/Index.ast : astj $g_root/src/Index.re
 rule deps
-  command = /Users/daniel/Workspace/danielmain/node_modules/bs-platform/darwin/bsb_helper.exe -hash 0574716d3f2229cf44c181fefecafaa1 -bs-ns Danielmain $in
+  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsb_helper.exe -hash 0574716d3f2229cf44c181fefecafaa1 -bs-ns Danielmain $in
   restat = 1
 o src/Index.d : deps src/Index.ast
 rule mij
-  command = /Users/daniel/Workspace/danielmain/node_modules/bs-platform/darwin/bsc.exe -bs-ns Danielmain -I . -I src/ReducerFromReactJSDocs -I src/ReasonUsingJSUsingReason -I src/BlinkingGreeting -I src/FetchedDogPictures -I src -I /Users/daniel/Workspace/danielmain/node_modules/reason-react/lib/ocaml  -bs-super-errors -bs-no-version-header -bs-package-name danielmain -bs-package-output commonjs:$in_d:.bs.js -o $out $i
+  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe -bs-ns Danielmain -I . -I src/ReducerFromReactJSDocs -I src/ReasonUsingJSUsingReason -I src/BlinkingGreeting -I src/FetchedDogPictures -I src -I /Users/daniel/Workspace/profile/node_modules/reason-react/lib/ocaml  -bs-super-errors -bs-no-version-header -bs-package-name danielmain -bs-package-output commonjs:$in_d:.bs.js -o $out $i
   dyndep = 1
   restat = 1
 o src/Index-Danielmain.cmj src/Index-Danielmain.cmi ../../src/Index.bs.js : mij src/Index.ast
@@ -30,6 +30,6 @@ o src/ReducerFromReactJSDocs/ReducerFromReactJSDocs.ast : astj $g_root/src/Reduc
 o src/ReducerFromReactJSDocs/ReducerFromReactJSDocs.d : deps src/ReducerFromReactJSDocs/ReducerFromReactJSDocs.ast
 o src/ReducerFromReactJSDocs/ReducerFromReactJSDocs-Danielmain.cmj src/ReducerFromReactJSDocs/ReducerFromReactJSDocs-Danielmain.cmi ../../src/ReducerFromReactJSDocs/ReducerFromReactJSDocs.bs.js : mij src/ReducerFromReactJSDocs/ReducerFromReactJSDocs.ast
 rule build_package
-  command = /Users/daniel/Workspace/danielmain/node_modules/bs-platform/darwin/bsc.exe -w -49 -color always -no-alias-deps  $i
+  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe -w -49 -color always -no-alias-deps  $i
   restat = 1
 o Danielmain.cmi : build_package Danielmain.mlmap
