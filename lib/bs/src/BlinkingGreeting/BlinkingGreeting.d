@@ -1,1 +1,1 @@
-src/BlinkingGreeting/BlinkingGreeting-Danielmain.cmj : Danielmain.cmi
+src\BlinkingGreeting\BlinkingGreeting-Danielmain.cmj : Danielmain.cmi

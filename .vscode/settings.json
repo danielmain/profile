@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/cbf7c7ff-acd6-4847-98e1-364942c832b9/resourceGroups/profile/providers/Microsoft.Web/sites/danielmain",
+    "appService.deploySubpath": "."
+}

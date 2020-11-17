@@ -1,1 +1,1 @@
-src/ExampleStyles-Danielmain.cmj : Danielmain.cmi
+src\ExampleStyles-Danielmain.cmj : Danielmain.cmi

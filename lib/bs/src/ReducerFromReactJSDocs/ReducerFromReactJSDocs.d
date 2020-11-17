@@ -1,1 +1,1 @@
-src/ReducerFromReactJSDocs/ReducerFromReactJSDocs-Danielmain.cmj : Danielmain.cmi
+src\ReducerFromReactJSDocs\ReducerFromReactJSDocs-Danielmain.cmj : Danielmain.cmi

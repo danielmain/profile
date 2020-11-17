@@ -1,20 +1,20 @@
 ####{BSB GENERATED: NO EDIT
-B lib/bs
+B lib\bs
 FLG -open Danielmain
-FLG -ppx '/Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe -as-ppx -bs-jsx 3'
-S /Users/daniel/Workspace/profile/node_modules/bs-platform/lib/ocaml
-B /Users/daniel/Workspace/profile/node_modules/bs-platform/lib/ocaml
+FLG -ppx "C:\Users\daniel\Workspace\GitHub\profile\node_modules\bs-platform\win32\bsc.exe -as-ppx -bs-jsx 3"
+S C:\Users\daniel\Workspace\GitHub\profile\node_modules\bs-platform\lib\ocaml
+B C:\Users\daniel\Workspace\GitHub\profile\node_modules\bs-platform\lib\ocaml
 FLG -w +a-4-9-20-40-41-42-50-61-102
-S /Users/daniel/Workspace/profile/node_modules/reason-react/lib/ocaml
-B /Users/daniel/Workspace/profile/node_modules/reason-react/lib/ocaml
+S C:\Users\daniel\Workspace\GitHub\profile\node_modules\reason-react\lib\ocaml
+B C:\Users\daniel\Workspace\GitHub\profile\node_modules\reason-react\lib\ocaml
 S src
-B lib/bs/src
-S src/FetchedDogPictures
-B lib/bs/src/FetchedDogPictures
-S src/BlinkingGreeting
-B lib/bs/src/BlinkingGreeting
-S src/ReasonUsingJSUsingReason
-B lib/bs/src/ReasonUsingJSUsingReason
-S src/ReducerFromReactJSDocs
-B lib/bs/src/ReducerFromReactJSDocs
+B lib\bs\src
+S src\ReducerFromReactJSDocs
+B lib\bs\src\ReducerFromReactJSDocs
+S src\ReasonUsingJSUsingReason
+B lib\bs\src\ReasonUsingJSUsingReason
+S src\FetchedDogPictures
+B lib\bs\src\FetchedDogPictures
+S src\BlinkingGreeting
+B lib\bs\src\BlinkingGreeting
 ####BSB GENERATED: NO EDIT}

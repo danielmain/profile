@@ -1,35 +1,35 @@
-g_root = /Users/daniel/Workspace/profile
+g_root = C:\Users\daniel\Workspace\GitHub\profile
 rule astj
-  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe  -bs-v 8.3.3 -bs-jsx 3 -bs-super-errors -bs-no-version-header -bs-ast -o $out $i
-o src/Index.ast : astj $g_root/src/Index.re
+  command = "C:\Users\daniel\Workspace\GitHub\profile\node_modules\bs-platform\win32\bsc.exe"  -bs-v 8.3.3 -bs-jsx 3 -bs-super-errors -bs-no-version-header -bs-ast -o $out $i
+o src\Index.ast : astj $g_root\src\Index.re
 rule deps
-  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsb_helper.exe -hash 0574716d3f2229cf44c181fefecafaa1 -bs-ns Danielmain $in
+  command = "C:\Users\daniel\Workspace\GitHub\profile\node_modules\bs-platform\win32\bsb_helper.exe" -hash 8974ca9523b3b4d85a8e637dad3171fc -bs-ns Danielmain $in
   restat = 1
-o src/Index.d : deps src/Index.ast
+o src\Index.d : deps src\Index.ast
 rule mij
-  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe -bs-ns Danielmain -I . -I src/ReducerFromReactJSDocs -I src/ReasonUsingJSUsingReason -I src/BlinkingGreeting -I src/FetchedDogPictures -I src -I /Users/daniel/Workspace/profile/node_modules/reason-react/lib/ocaml  -bs-super-errors -bs-no-version-header -bs-package-name danielmain -bs-package-output commonjs:$in_d:.bs.js -o $out $i
+  command = "C:\Users\daniel\Workspace\GitHub\profile\node_modules\bs-platform\win32\bsc.exe" -bs-ns Danielmain -I . -I "src\BlinkingGreeting" -I "src\FetchedDogPictures" -I "src\ReasonUsingJSUsingReason" -I "src\ReducerFromReactJSDocs" -I src -I "C:\Users\daniel\Workspace\GitHub\profile\node_modules\reason-react\lib\ocaml"  -bs-super-errors -bs-no-version-header -bs-package-name danielmain -bs-package-output commonjs:$in_d:.bs.js -o $out $i
   dyndep = 1
   restat = 1
-o src/Index-Danielmain.cmj src/Index-Danielmain.cmi ../../src/Index.bs.js : mij src/Index.ast
-o src/ExampleStyles.ast : astj $g_root/src/ExampleStyles.re
-o src/ExampleStyles.d : deps src/ExampleStyles.ast
-o src/ExampleStyles-Danielmain.cmj src/ExampleStyles-Danielmain.cmi ../../src/ExampleStyles.bs.js : mij src/ExampleStyles.ast
-o src/FetchedDogPictures/FetchedDogPictures.ast : astj $g_root/src/FetchedDogPictures/FetchedDogPictures.re
-o src/FetchedDogPictures/FetchedDogPictures.d : deps src/FetchedDogPictures/FetchedDogPictures.ast
-o src/FetchedDogPictures/FetchedDogPictures-Danielmain.cmj src/FetchedDogPictures/FetchedDogPictures-Danielmain.cmi ../../src/FetchedDogPictures/FetchedDogPictures.bs.js : mij src/FetchedDogPictures/FetchedDogPictures.ast
-o src/BlinkingGreeting/BlinkingGreeting.ast : astj $g_root/src/BlinkingGreeting/BlinkingGreeting.re
-o src/BlinkingGreeting/BlinkingGreeting.d : deps src/BlinkingGreeting/BlinkingGreeting.ast
-o src/BlinkingGreeting/BlinkingGreeting-Danielmain.cmj src/BlinkingGreeting/BlinkingGreeting-Danielmain.cmi ../../src/BlinkingGreeting/BlinkingGreeting.bs.js : mij src/BlinkingGreeting/BlinkingGreeting.ast
-o src/ReasonUsingJSUsingReason/ReasonReactCard.ast : astj $g_root/src/ReasonUsingJSUsingReason/ReasonReactCard.re
-o src/ReasonUsingJSUsingReason/ReasonReactCard.d : deps src/ReasonUsingJSUsingReason/ReasonReactCard.ast
-o src/ReasonUsingJSUsingReason/ReasonReactCard-Danielmain.cmj src/ReasonUsingJSUsingReason/ReasonReactCard-Danielmain.cmi ../../src/ReasonUsingJSUsingReason/ReasonReactCard.bs.js : mij src/ReasonUsingJSUsingReason/ReasonReactCard.ast
-o src/ReasonUsingJSUsingReason/ReasonUsingJSUsingReason.ast : astj $g_root/src/ReasonUsingJSUsingReason/ReasonUsingJSUsingReason.re
-o src/ReasonUsingJSUsingReason/ReasonUsingJSUsingReason.d : deps src/ReasonUsingJSUsingReason/ReasonUsingJSUsingReason.ast
-o src/ReasonUsingJSUsingReason/ReasonUsingJSUsingReason-Danielmain.cmj src/ReasonUsingJSUsingReason/ReasonUsingJSUsingReason-Danielmain.cmi ../../src/ReasonUsingJSUsingReason/ReasonUsingJSUsingReason.bs.js : mij src/ReasonUsingJSUsingReason/ReasonUsingJSUsingReason.ast
-o src/ReducerFromReactJSDocs/ReducerFromReactJSDocs.ast : astj $g_root/src/ReducerFromReactJSDocs/ReducerFromReactJSDocs.re
-o src/ReducerFromReactJSDocs/ReducerFromReactJSDocs.d : deps src/ReducerFromReactJSDocs/ReducerFromReactJSDocs.ast
-o src/ReducerFromReactJSDocs/ReducerFromReactJSDocs-Danielmain.cmj src/ReducerFromReactJSDocs/ReducerFromReactJSDocs-Danielmain.cmi ../../src/ReducerFromReactJSDocs/ReducerFromReactJSDocs.bs.js : mij src/ReducerFromReactJSDocs/ReducerFromReactJSDocs.ast
+o src\Index-Danielmain.cmj src\Index-Danielmain.cmi ..\..\src\Index.bs.js : mij src\Index.ast
+o src\ExampleStyles.ast : astj $g_root\src\ExampleStyles.re
+o src\ExampleStyles.d : deps src\ExampleStyles.ast
+o src\ExampleStyles-Danielmain.cmj src\ExampleStyles-Danielmain.cmi ..\..\src\ExampleStyles.bs.js : mij src\ExampleStyles.ast
+o src\ReducerFromReactJSDocs\ReducerFromReactJSDocs.ast : astj $g_root\src\ReducerFromReactJSDocs\ReducerFromReactJSDocs.re
+o src\ReducerFromReactJSDocs\ReducerFromReactJSDocs.d : deps src\ReducerFromReactJSDocs\ReducerFromReactJSDocs.ast
+o src\ReducerFromReactJSDocs\ReducerFromReactJSDocs-Danielmain.cmj src\ReducerFromReactJSDocs\ReducerFromReactJSDocs-Danielmain.cmi ..\..\src\ReducerFromReactJSDocs\ReducerFromReactJSDocs.bs.js : mij src\ReducerFromReactJSDocs\ReducerFromReactJSDocs.ast
+o src\ReasonUsingJSUsingReason\ReasonReactCard.ast : astj $g_root\src\ReasonUsingJSUsingReason\ReasonReactCard.re
+o src\ReasonUsingJSUsingReason\ReasonReactCard.d : deps src\ReasonUsingJSUsingReason\ReasonReactCard.ast
+o src\ReasonUsingJSUsingReason\ReasonReactCard-Danielmain.cmj src\ReasonUsingJSUsingReason\ReasonReactCard-Danielmain.cmi ..\..\src\ReasonUsingJSUsingReason\ReasonReactCard.bs.js : mij src\ReasonUsingJSUsingReason\ReasonReactCard.ast
+o src\ReasonUsingJSUsingReason\ReasonUsingJSUsingReason.ast : astj $g_root\src\ReasonUsingJSUsingReason\ReasonUsingJSUsingReason.re
+o src\ReasonUsingJSUsingReason\ReasonUsingJSUsingReason.d : deps src\ReasonUsingJSUsingReason\ReasonUsingJSUsingReason.ast
+o src\ReasonUsingJSUsingReason\ReasonUsingJSUsingReason-Danielmain.cmj src\ReasonUsingJSUsingReason\ReasonUsingJSUsingReason-Danielmain.cmi ..\..\src\ReasonUsingJSUsingReason\ReasonUsingJSUsingReason.bs.js : mij src\ReasonUsingJSUsingReason\ReasonUsingJSUsingReason.ast
+o src\FetchedDogPictures\FetchedDogPictures.ast : astj $g_root\src\FetchedDogPictures\FetchedDogPictures.re
+o src\FetchedDogPictures\FetchedDogPictures.d : deps src\FetchedDogPictures\FetchedDogPictures.ast
+o src\FetchedDogPictures\FetchedDogPictures-Danielmain.cmj src\FetchedDogPictures\FetchedDogPictures-Danielmain.cmi ..\..\src\FetchedDogPictures\FetchedDogPictures.bs.js : mij src\FetchedDogPictures\FetchedDogPictures.ast
+o src\BlinkingGreeting\BlinkingGreeting.ast : astj $g_root\src\BlinkingGreeting\BlinkingGreeting.re
+o src\BlinkingGreeting\BlinkingGreeting.d : deps src\BlinkingGreeting\BlinkingGreeting.ast
+o src\BlinkingGreeting\BlinkingGreeting-Danielmain.cmj src\BlinkingGreeting\BlinkingGreeting-Danielmain.cmi ..\..\src\BlinkingGreeting\BlinkingGreeting.bs.js : mij src\BlinkingGreeting\BlinkingGreeting.ast
 rule build_package
-  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe -w -49 -color always -no-alias-deps  $i
+  command = "C:\Users\daniel\Workspace\GitHub\profile\node_modules\bs-platform\win32\bsc.exe" -w -49 -color always -no-alias-deps  $i
   restat = 1
 o Danielmain.cmi : build_package Danielmain.mlmap
