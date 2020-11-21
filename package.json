@@ -1,25 +1,16 @@
 {
   "name": "danielmain",
-  "version": "0.1.0",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "NODE_ENV=development parcel src/index.html --open --port 3000"
+    "start": "node ./bin/www"
   },
-  "keywords": [
-    "BuckleScript",
-    "ReasonReact",
-    "reason-react"
-  ],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "reason-react": ">=0.9.1"
-  },
-  "devDependencies": {
-    "bs-platform": "^8.3.3",
-    "bsb-js": "^1.1.7",
-    "moduleserve": "^0.9.1",
-    "parcel-bundler": "^1.12.4"
+    "cookie-parser": "~1.4.5",
+    "debug": "~4.3.1",
+    "express": "~4.17.1",
+    "http-errors": "~1.8.0",
+    "morgan": "~1.10.0",
+    "pug": "^3.0.0"
   }
 }
