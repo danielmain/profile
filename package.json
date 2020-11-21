@@ -2,7 +2,7 @@
   "name": "danielmain",
   "version": "0.1.0",
   "scripts": {
-    "start": "NODE_ENV=development parcel src/index.html --open --port 8080"
+    "start": "NODE_ENV=development parcel src/index.html --open --port 3000"
   },
   "keywords": [
     "BuckleScript",
