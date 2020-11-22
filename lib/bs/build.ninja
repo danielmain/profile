@@ -1,6 +1,6 @@
 g_root = /Users/daniel/Workspace/profile
 rule astj
-  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe  -bs-v 8.3.3,1606031236.01 -ppx /Users/daniel/Workspace/profile/node_modules/@jsiebern/bs-material-ui-ppx/ppx -bs-jsx 3 -bs-super-errors -bs-ast -o $out $i
+  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe  -bs-v 8.3.3,1606036837.99 -ppx /Users/daniel/Workspace/profile/node_modules/@jsiebern/bs-material-ui-ppx/ppx -bs-jsx 3 -bs-super-errors -bs-ast -o $out $i
 o src/App.ast : astj $g_root/src/App.res
 rule deps
   command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsb_helper.exe -hash 28491ea70cfbabc8786411e8b624252f -bs-ns Danielmain $in

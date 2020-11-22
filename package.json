@@ -2,9 +2,10 @@
   "name": "danielmain",
   "version": "0.1.0",
   "scripts": {
-    "bs:build": "bsb -make-world",
-    "bs:clean": "bsb -clean-world; rm -rf .cache",
-    "start": "NODE_ENV=development parcel src/index.html --open --port 8080"
+    "build": "bsb -make-world",
+    "clean": "bsb -clean-world; rm -rf .cache",
+    "start:dev": "NODE_ENV=development node ./node_modules/.bin/parcel src/index.html --open --port 8080",
+    "start": "node ./node_modules/.bin/parcel src/index.html --open --port $PORT"
   },
   "keywords": [
     "BuckleScript",
@@ -36,7 +37,7 @@
   },
   "dependencies": {
     "@jsiebern/bs-material-ui": "^2.0.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
