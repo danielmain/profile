@@ -1,16 +1,19 @@
 g_root = /Users/daniel/Workspace/profile
 rule astj
-  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe  -bs-v 8.3.3 -bs-jsx 3 -bs-super-errors -bs-ast -o $out $i
-o src/Index.ast : astj $g_root/src/Index.re
+  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe  -bs-v 8.3.3,1606031236.01 -ppx /Users/daniel/Workspace/profile/node_modules/@jsiebern/bs-material-ui-ppx/ppx -bs-jsx 3 -bs-super-errors -bs-ast -o $out $i
+o src/App.ast : astj $g_root/src/App.res
 rule deps
-  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsb_helper.exe -hash 157a7fb11c5b92151d3e1f1443265728 -bs-ns Danielmain $in
+  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsb_helper.exe -hash 28491ea70cfbabc8786411e8b624252f -bs-ns Danielmain $in
   restat = 1
-o src/Index.d : deps src/Index.ast
+o src/App.d : deps src/App.ast
 rule mij
-  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe -bs-ns Danielmain -I . -I src -I /Users/daniel/Workspace/profile/node_modules/reason-react/lib/ocaml  -bs-super-errors -bs-package-name danielmain -bs-package-output commonjs:$in_d:.bs.js -o $out $i
+  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe -bs-ns Danielmain -I . -I src -I /Users/daniel/Workspace/profile/node_modules/reason-react/lib/ocaml -I /Users/daniel/Workspace/profile/node_modules/@jsiebern/bs-material-ui/lib/ocaml  -bs-super-errors -bs-package-name danielmain -bs-package-output commonjs:$in_d:.bs.js -o $out $i
   dyndep = 1
   restat = 1
-o src/Index-Danielmain.cmj src/Index-Danielmain.cmi ../../src/Index.bs.js : mij src/Index.ast
+o src/App-Danielmain.cmj src/App-Danielmain.cmi ../../src/App.bs.js : mij src/App.ast
+o src/AppLayout.ast : astj $g_root/src/AppLayout.res
+o src/AppLayout.d : deps src/AppLayout.ast
+o src/AppLayout-Danielmain.cmj src/AppLayout-Danielmain.cmi ../../src/AppLayout.bs.js : mij src/AppLayout.ast
 rule build_package
   command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe -w -49 -color always -no-alias-deps  $i
   restat = 1

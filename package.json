@@ -2,6 +2,8 @@
   "name": "danielmain",
   "version": "0.1.0",
   "scripts": {
+    "bs:build": "bsb -make-world",
+    "bs:clean": "bsb -clean-world; rm -rf .cache",
     "start": "NODE_ENV=development parcel src/index.html --open --port 8080"
   },
   "keywords": [
@@ -11,15 +13,30 @@
   ],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "reason-react": ">=0.9.1"
+  "files": [
+    "/src",
+    "/bsconfig.json"
+  ],
+  "peerDependencies": {
+    "@material-ui/core": "^4.9.11",
+    "bs-platform": "^8.2.0",
+    "reason-react": "^0.9.1"
   },
   "devDependencies": {
+    "@babel/helper-call-delegate": "^7.12.1",
+    "@jsiebern/bs-material-ui-ppx": "^2.0.1",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@mscharley/bs-material-ui-icons": "^1.0.3",
     "bs-platform": "^8.3.3",
     "bsb-js": "^1.1.7",
-    "moduleserve": "^0.9.1",
-    "parcel-bundler": "^1.12.4"
+    "clsx": "^1.1.1",
+    "parcel-bundler": "^1.12.4",
+    "reason-react": "^0.9.1"
+  },
+  "dependencies": {
+    "@jsiebern/bs-material-ui": "^2.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
