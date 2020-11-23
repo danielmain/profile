@@ -5,14 +5,15 @@ var Curry = require("bs-platform/lib/js/curry.js");
 var React = require("react");
 var MaterialUi_Grid = require("@jsiebern/bs-material-ui/src/MaterialUi_Grid.bs.js");
 var Core = require("@material-ui/core");
+var MainPage$Danielmain = require("./MainPage.bs.js");
 var Styles = require("@material-ui/core/styles");
 var MaterialUi_ThemeProvider = require("@jsiebern/bs-material-ui/src/MaterialUi_ThemeProvider.bs.js");
 
 var useStyles = Styles.makeStyles({
       container: {
+        backgroundColor: "black",
         height: "100%",
-        margin: "30px auto",
-        maxWidth: "970px",
+        margin: "0",
         width: "100%"
       }
     });
@@ -23,22 +24,18 @@ var Styles$1 = {
 
 function AppLayout(Props) {
   var classes = Curry._1(useStyles, undefined);
+  React.useState(function () {
+        return 0;
+      });
   return React.createElement(MaterialUi_ThemeProvider.make, {
               children: React.createElement("div", {
                     className: classes.container
                   }, React.createElement(Core.CssBaseline, {}), React.createElement(Core.Grid, {
                         children: React.createElement(Core.Grid, {
-                              children: null,
+                              children: React.createElement(MainPage$Danielmain.make, {}),
                               item: true,
                               md: MaterialUi_Grid.Md._12
-                            }, React.createElement(Core.Typography, {
-                                  children: "Examples",
-                                  variant: "h4"
-                                }), React.createElement(Core.Button, {
-                                  children: "Button",
-                                  color: "primary",
-                                  variant: "contained"
-                                })),
+                            }),
                         container: true
                       })),
               theme: Styles.createMuiTheme({})

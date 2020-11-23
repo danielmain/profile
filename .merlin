@@ -10,6 +10,8 @@ S /Users/daniel/Workspace/profile/node_modules/reason-react/lib/ocaml
 B /Users/daniel/Workspace/profile/node_modules/reason-react/lib/ocaml
 S /Users/daniel/Workspace/profile/node_modules/@jsiebern/bs-material-ui/lib/ocaml
 B /Users/daniel/Workspace/profile/node_modules/@jsiebern/bs-material-ui/lib/ocaml
+S /Users/daniel/Workspace/profile/node_modules/@mscharley/bs-material-ui-icons/lib/ocaml
+B /Users/daniel/Workspace/profile/node_modules/@mscharley/bs-material-ui-icons/lib/ocaml
 S src
 B lib/bs/src
 ####BSB GENERATED: NO EDIT}

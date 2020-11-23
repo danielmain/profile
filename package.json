@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
     "clean": "bsb -clean-world; rm -rf .cache",
     "start:dev": "NODE_ENV=development node ./node_modules/.bin/parcel src/index.html --open --port 8080",
     "start": "node ./node_modules/.bin/parcel src/index.html --open --port $PORT"

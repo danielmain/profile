@@ -3,8 +3,8 @@ module Styles = %makeStyles(
     container: ReactDOMRe.Style.make(
       ~width="100%",
       ~height="100%",
-      ~maxWidth="970px",
-      ~margin="30px auto",
+      ~backgroundColor="black",
+      ~margin="0",
       (),
     ),
   }
@@ -13,6 +13,7 @@ module Styles = %makeStyles(
 @react.component
 let make = () => {
   let classes = Styles.useStyles()
+  let (value, setValue) = React.useState(_ => 0)
   <MaterialUi_ThemeProvider theme={MaterialUi_Theme.create(MaterialUi_ThemeOptions.make())}>
     {
       open MaterialUi
@@ -20,8 +21,19 @@ let make = () => {
         <CssBaseline />
         <Grid container=true>
           <Grid item=true md=Grid.Md._12>
-            <Typography variant=#H4>"Examples"</Typography>
-            <Button color=#Primary variant=#Contained>"Button"</Button>
+          <MainPage/>
+            // <Typography variant=#H4>"Examples"</Typography>
+            // <BottomNavigation
+            //   value={Any(value)}
+            //   showLabels=true
+            // >
+            //     <IconButton color=#Inherit>
+            //       <Badge badgeContent={"4"->ReasonReact.string} color=#Secondary>
+            //         <MscharleyBsMaterialUiIcons.Notifications.Filled />
+            //       </Badge>
+            //     </IconButton>
+            // </BottomNavigation>
+            // <Button color=#Primary variant=#Contained>"Button"</Button>
           </Grid>
         </Grid>
       </div>

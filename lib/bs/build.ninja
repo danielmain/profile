@@ -1,16 +1,19 @@
 g_root = /Users/daniel/Workspace/profile
 rule astj
-  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe  -bs-v 8.3.3,1606036837.99 -ppx /Users/daniel/Workspace/profile/node_modules/@jsiebern/bs-material-ui-ppx/ppx -bs-jsx 3 -bs-super-errors -bs-ast -o $out $i
+  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe  -bs-v 8.3.3,1606045484.05 -ppx /Users/daniel/Workspace/profile/node_modules/@jsiebern/bs-material-ui-ppx/ppx -bs-jsx 3 -bs-super-errors -bs-ast -o $out $i
 o src/App.ast : astj $g_root/src/App.res
 rule deps
-  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsb_helper.exe -hash 28491ea70cfbabc8786411e8b624252f -bs-ns Danielmain $in
+  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsb_helper.exe -hash 5ea506487f41bb172b6c3d1c2b9fad2b -bs-ns Danielmain $in
   restat = 1
 o src/App.d : deps src/App.ast
 rule mij
-  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe -bs-ns Danielmain -I . -I src -I /Users/daniel/Workspace/profile/node_modules/reason-react/lib/ocaml -I /Users/daniel/Workspace/profile/node_modules/@jsiebern/bs-material-ui/lib/ocaml  -bs-super-errors -bs-package-name danielmain -bs-package-output commonjs:$in_d:.bs.js -o $out $i
+  command = /Users/daniel/Workspace/profile/node_modules/bs-platform/darwin/bsc.exe -bs-ns Danielmain -I . -I src -I /Users/daniel/Workspace/profile/node_modules/reason-react/lib/ocaml -I /Users/daniel/Workspace/profile/node_modules/@jsiebern/bs-material-ui/lib/ocaml -I /Users/daniel/Workspace/profile/node_modules/@mscharley/bs-material-ui-icons/lib/ocaml  -bs-super-errors -bs-package-name danielmain -bs-package-output commonjs:$in_d:.bs.js -o $out $i
   dyndep = 1
   restat = 1
 o src/App-Danielmain.cmj src/App-Danielmain.cmi ../../src/App.bs.js : mij src/App.ast
+o src/MainPage.ast : astj $g_root/src/MainPage.res
+o src/MainPage.d : deps src/MainPage.ast
+o src/MainPage-Danielmain.cmj src/MainPage-Danielmain.cmi ../../src/MainPage.bs.js : mij src/MainPage.ast
 o src/AppLayout.ast : astj $g_root/src/AppLayout.res
 o src/AppLayout.d : deps src/AppLayout.ast
 o src/AppLayout-Danielmain.cmj src/AppLayout-Danielmain.cmi ../../src/AppLayout.bs.js : mij src/AppLayout.ast
