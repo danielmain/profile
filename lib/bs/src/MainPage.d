@@ -1,1 +1,1 @@
-src/MainPage-Danielmain.cmj : Danielmain.cmi
+src/MainPage-Danielmain.cmj : Danielmain.cmi src/TabContextPatched-Danielmain.cmj src/TabContextPatched-Danielmain.cmi src/TabPanelPatched-Danielmain.cmj src/TabPanelPatched-Danielmain.cmi src/TabsPatched-Danielmain.cmj src/TabsPatched-Danielmain.cmi

@@ -3,6 +3,7 @@
 
 var Curry = require("bs-platform/lib/js/curry.js");
 var React = require("react");
+var Lab = require("@material-ui/lab");
 var Core = require("@material-ui/core");
 var MaterialUi_IconButton = require("@jsiebern/bs-material-ui/src/MaterialUi_IconButton.bs.js");
 var Menu = require("@material-ui/icons/Menu").default;
@@ -34,29 +35,72 @@ var Styles$1 = {
 
 function MainPage(Props) {
   var classes = Curry._1(useStyles, undefined);
-  return React.createElement(Core.AppBar, {
-              children: React.createElement(Core.Toolbar, {
-                    children: React.createElement("div", undefined, React.createElement("div", {
-                              className: classes.menuContainer
-                            }, React.createElement(Core.IconButton, {
-                                  children: React.createElement(Menu, {}),
-                                  className: classes.menuButton,
-                                  color: "inherit",
-                                  edge: MaterialUi_IconButton.Edge.start
-                                }), React.createElement(Core.Typography, {
-                                  children: "Timeline",
-                                  className: classes.title,
-                                  variant: "h6"
-                                })), React.createElement("div", {
-                              className: classes.menuContainer
-                            }, React.createElement(Core.Avatar, {
-                                  alt: "Remy Sharp",
-                                  className: classes.avatar,
-                                  src: "https://avatars0.githubusercontent.com/u/4303099?s=400&u=fdc8480753f4ecb01d6ad7da9b94d0df93ca8ab2&v=4"
-                                })))
-                  }),
-              position: "static"
-            });
+  var match = React.useState(function () {
+        return 0;
+      });
+  var setValue = match[1];
+  var value = match[0];
+  var handleChange = function (e, newValue) {
+    console.log(value);
+    console.log(newValue);
+    return Curry._1(setValue, (function (param) {
+                  return newValue;
+                }));
+  };
+  return React.createElement("div", undefined, React.createElement(Lab.TabContext, {
+                  children: null,
+                  value: value
+                }, React.createElement(Core.AppBar, {
+                      children: null,
+                      position: "static"
+                    }, React.createElement(Core.Tabs, {
+                          children: null,
+                          onChange: handleChange,
+                          value: value
+                        }, React.createElement(Core.Tab, {
+                              label: "About me"
+                            }), React.createElement(Core.Tab, {
+                              label: "Resume"
+                            }), React.createElement(Core.Tab, {
+                              label: "Portfolio"
+                            }), React.createElement(Core.Tab, {
+                              label: "Contact"
+                            })), React.createElement("div", {
+                          className: classes.menuContainer
+                        }, React.createElement(Core.IconButton, {
+                              children: React.createElement(Menu, {}),
+                              className: classes.menuButton,
+                              color: "inherit",
+                              edge: MaterialUi_IconButton.Edge.start
+                            }), React.createElement(Core.Typography, {
+                              children: "Timeline",
+                              className: classes.title,
+                              variant: "h6"
+                            })), React.createElement("div", {
+                          className: classes.menuContainer
+                        }, React.createElement(Core.Avatar, {
+                              alt: "Remy Sharp",
+                              className: classes.avatar,
+                              src: "https://avatars0.githubusercontent.com/u/4303099?s=400&u=fdc8480753f4ecb01d6ad7da9b94d0df93ca8ab2&v=4"
+                            }))), React.createElement(Lab.TabPanel, {
+                      children: React.createElement(Core.Typography, {
+                            children: "Examples",
+                            variant: "h4"
+                          }),
+                      value: value
+                    }), React.createElement(Lab.TabPanel, {
+                      children: React.createElement(Core.Typography, {
+                            children: "Examples",
+                            variant: "h4"
+                          }),
+                      value: value
+                    }), React.createElement(Lab.TabPanel, {
+                      children: React.createElement(Core.Typography, {
+                            children: "Examples",
+                            variant: "h4"
+                          }),
+                      value: value
+                    })));
 }
 
 var make = MainPage;
