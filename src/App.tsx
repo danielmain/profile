@@ -1,24 +1,53 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import { Grid, Segment } from "@fluentui/react-northstar";
+import { Customizer } from 'office-ui-fabric-react';
+import { Grid, Segment, Provider } from "@fluentui/react-northstar";
+import { IComponent, IComponentStyles, IStyleableComponentProps } from '@fluentui/foundation-legacy';
+import { FluentCustomizations } from '@uifabric/fluent-theme';
+import { IStyle, mergeStyleSets } from '@uifabric/merge-styles';
 
-const App: React.FC = () => (
-  <Router>
+export interface IComponentClassNames {
+  rootContainer: string;
+  leftContainer: string;
+  rightContainer: string;
+}
+
+export const getClassNames = (): IComponentClassNames => {
+  return mergeStyleSets({
+    rootContainer: {
+      background: 'white',
+    },
+    leftContainer: {
+      backgroundColor: 'green',
+      margin: 10,
+      gridColumn: 2,
+      girdRow: 2,
+    },
+    rightContainer: {
+      margin: 10,
+      backgroundColor: 'red',
+      gridColumn: 2,
+      girdRow: 2,
+    },
+  });
+};
+
+const App: React.FC = () => {
+  let { rootContainer, leftContainer, rightContainer } = getClassNames();
+
+  return (<Router>
     <Switch>
       <Route path="/">
-        <Grid columns="2">
-          <Segment color="brand" content="Home" inverted styles={{
-            gridColumn: '1',
-            gridRow: '2',
-          }}/>
-          <Segment color="green" content="Search" inverted styles={{
-            gridColumn: '2',
-            gridRow: '2',
-          }}/>
-        </Grid>
+        <Customizer {...FluentCustomizations}>
+          <Grid columns="2" className={rootContainer}>
+            <Segment content="Home" className={leftContainer} inverted />
+            <Segment content="Search" className={rightContainer} inverted />
+          </Grid>
+        </Customizer>
       </Route>
     </Switch>
   </Router>
 );
+          }
 
 export default App;
