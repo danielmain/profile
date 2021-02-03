@@ -9,19 +9,23 @@ import {
   Text,
   PresenterIcon,
   TableIcon,
+  Image,
 } from '@fluentui/react-northstar';
-
 import { mergeStyleSets } from '@uifabric/merge-styles';
+import ReactLogo from './assets/reactlogo.png';
+import ProfilePicture from './assets/profile.jpg';
 
 export interface IComponentClassNames {
-  rootContainer: string;
   title: string;
   subtitle: string;
   paragraph: string;
   serviceTitle: string;
-  boxContainer: string;
-  box: string;
   secondaryBoxText: string;
+  devIcon: string;
+  autoIcon: string;
+  meetIcon: string;
+  dbIcon: string;
+  image: string;
 }
 
 export const getClassNames = (): IComponentClassNames => {
@@ -44,35 +48,53 @@ export const getClassNames = (): IComponentClassNames => {
     paragraph: {
       paddingRight: 10,
     },
-    boxContainer: {
-      marginTop: 15,
-    },
-    box: {
-      padding: 0,
-    },
     secondaryBoxText: {
       paddingTop: 10,
+    },
+    devIcon: {
+      color: '#887cbe',
+    },
+    autoIcon: {
+      color: '#887cbe',
+    },
+    meetIcon: {
+      color: '#887cbe',
+    },
+    dbIcon: {
+      color: '#887cbe',
+    },
+    image: {
+      maxWidth: 90,
+      maxHeight: 60,
     },
   });
 };
 export const AbountMe: React.FC = () => {
   const {
-    rootContainer,
     title,
     subtitle,
     serviceTitle,
     paragraph,
-    boxContainer,
-    box,
     secondaryBoxText,
+    devIcon,
+    autoIcon,
+    meetIcon,
+    dbIcon,
+    image,
   } = getClassNames();
 
   return (
     <>
-      <Flex className={rootContainer} column>
-        <FlexItem>
-          <Text size="largest" content="abount me" className={title} />
-        </FlexItem>
+      <Flex gap="gap.small" padding="padding.medium" column>
+        <Flex column={false}>
+          <FlexItem push grow>
+            <Text size="largest" content="about me" className={title} />
+          </FlexItem>
+          <FlexItem>
+            <Image className={image} src={ReactLogo} />
+          </FlexItem>
+        </Flex>
+
         <FlexItem>
           <Segment>
             <Text
@@ -123,88 +145,86 @@ export const AbountMe: React.FC = () => {
         <FlexItem>
           <Text size="largest" content="my services" className={serviceTitle} />
         </FlexItem>
-        <Flex className={boxContainer} wrap hAlign="center">
-          <Segment>
-            <Card aria-roledescription="card">
-              <Card.Header fitted>
-                <Flex gap="gap.medium">
-                  <CompanionIcon circular size="large" />
-                  <Flex column>
-                    <Text
-                      content="Web and Mobile in React"
-                      weight="bold"
-                      size="large"
-                    />
-                    <Text
-                      className={secondaryBoxText}
-                      color="brand"
-                      content="Building a custom tailored solution based on your technical specification. Pure Typescript without 'any'."
-                    />
-                  </Flex>
+      </Flex>
+      <Flex padding="padding.medium" gap="gap.small">
+        <FlexItem size="size.half">
+          <Card aria-roledescription="card">
+            <Card.Header fitted>
+              <Flex gap="gap.medium">
+                <CompanionIcon size="large" className={devIcon} />
+                <Flex column>
+                  <Text
+                    content="Web and Mobile in React"
+                    weight="bold"
+                    size="large"
+                  />
+                  <Text
+                    className={secondaryBoxText}
+                    color="brand"
+                    content="Building a custom tailored solution based on your technical specification. Pure Typescript without 'any'."
+                  />
                 </Flex>
-              </Card.Header>
-            </Card>
-          </Segment>
-          <Segment>
-            <Card aria-roledescription="card">
-              <Card.Header fitted>
-                <Flex gap="gap.medium">
-                  <RobotIcon circular size="large" />
-                  <Flex column>
-                    <Text
-                      content="Automated testing"
-                      weight="bold"
-                      size="large"
-                    />
-                    <Text
-                      className={secondaryBoxText}
-                      color="brand"
-                      content="Helping you to reach a higher test-coverage using unit-test and end-to-end tests based on Appium UI."
-                    />
-                  </Flex>
+              </Flex>
+            </Card.Header>
+          </Card>
+        </FlexItem>
+        <FlexItem size="size.half">
+          <Card aria-roledescription="card">
+            <Card.Header fitted>
+              <Flex gap="gap.medium">
+                <RobotIcon size="large" className={autoIcon} />
+                <Flex column>
+                  <Text
+                    content="Automated testing"
+                    weight="bold"
+                    size="large"
+                  />
+                  <Text
+                    className={secondaryBoxText}
+                    color="brand"
+                    content="Helping you to reach a higher test-coverage using unit-test and end-to-end tests based on Appium UI."
+                  />
                 </Flex>
-              </Card.Header>
-            </Card>
-          </Segment>
-          <Segment>
-            <Card aria-roledescription="card">
-              <Card.Header fitted>
-                <Flex gap="gap.medium">
-                  <PresenterIcon circular size="large" />
-                  <Flex column>
-                    <Text
-                      content="Remote workshops"
-                      weight="bold"
-                      size="large"
-                    />
-                    <Text
-                      className={secondaryBoxText}
-                      color="brand"
-                      content="I can prepare your team to be ready to start coding with react."
-                    />
-                  </Flex>
+              </Flex>
+            </Card.Header>
+          </Card>
+        </FlexItem>
+      </Flex>
+      <Flex padding="padding.medium" gap="gap.small">
+        <FlexItem size="size.half">
+          <Card aria-roledescription="card">
+            <Card.Header fitted>
+              <Flex gap="gap.medium">
+                <PresenterIcon size="large" className={meetIcon} />
+                <Flex column>
+                  <Text content="Remote workshops" weight="bold" size="large" />
+                  <Text
+                    className={secondaryBoxText}
+                    color="brand"
+                    content="I can prepare your team to be ready to start coding with react. The workshop can be done in three different languages: English/German/Spanish"
+                  />
                 </Flex>
-              </Card.Header>
-            </Card>
-          </Segment>
-          <Segment>
-            <Card aria-roledescription="card">
-              <Card.Header fitted>
-                <Flex gap="gap.medium">
-                  <TableIcon circular size="large" />
-                  <Flex column>
-                    <Text content="Databases" weight="bold" size="large" />
-                    <Text
-                      className={secondaryBoxText}
-                      color="brand"
-                      content="Vast experience with SQL databases like Oracle and MySQL. But if relations and consistency is the key a document based db ist for you."
-                    />
-                  </Flex>
+              </Flex>
+            </Card.Header>
+          </Card>
+        </FlexItem>
+        <FlexItem size="size.half">
+          <Card aria-roledescription="card">
+            <Card.Header fitted>
+              <Flex gap="gap.medium">
+                <TableIcon size="large" className={dbIcon} />
+                <Flex column>
+                  <Text content="Databases" weight="bold" size="large" />
+                  <Text
+                    className={secondaryBoxText}
+                    color="brand"
+                    content="Vast experience with SQL databases like Oracle and MySQL. But if relations and consistency is not the key a document based db ist for you."
+                  />
                 </Flex>
-              </Card.Header>
-            </Card>
-          </Segment>
-        </Flex>
+              </Flex>
+            </Card.Header>
+          </Card>
+        </FlexItem>
       </Flex>
     </>
   );

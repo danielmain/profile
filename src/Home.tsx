@@ -34,6 +34,7 @@ export const getClassNames = (): IComponentClassNames => {
     contentContainer: {
       marginTop: 30,
       marginBottom: 30,
+      overflowY: 'auto',
     },
     image: {
       // margin: 0,

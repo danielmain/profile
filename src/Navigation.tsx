@@ -10,44 +10,34 @@ import {
   Segment,
   CallIcon,
 } from '@fluentui/react-northstar';
-import { mergeStyleSets } from '@uifabric/merge-styles';
 
 export interface IComponentClassNames {
   rootContainer: string;
   icon: string;
 }
 
-export const getClassNames = (): IComponentClassNames => {
-  return mergeStyleSets({
-    rootContainer: {},
-    icon: {
-      width: 20,
-      paddingRight: 0,
-      marginRight: 0,
-    },
-  });
-};
 export const Navigation: React.FC = () => {
-  const { rootContainer, icon } = getClassNames();
-
   return (
-    <Flex fill className={rootContainer} column>
-      <FlexItem push grow>
+    <Flex fill column>
+      <FlexItem grow>
         <Segment>
-          <Button className={icon} icon={<MenuIcon />} primary />
+          <Button icon={<MenuIcon size="large" />} primary />
         </Segment>
       </FlexItem>
       <Segment>
-        <Button className={icon} icon={<SpeakerPersonIcon />} />
+        <Button fluid size="largest" content="about me" />
       </Segment>
       <Segment>
-        <Button className={icon} icon={<CallIcon />} />
+        <Button fluid size="largest" content="contact" />
       </Segment>
       <Segment>
-        <Button className={icon} icon={<FilesTxtIcon />} />
+        <Button fluid size="largest" content="resume" />
       </Segment>
       <Segment>
-        <Button className={icon} icon={<TenantWorkIcon />} />
+        <Button fluid size="largest" content="portfolio" />
+      </Segment>
+      <Segment>
+        <Button fluid size="largest" content="inprint" />
       </Segment>
     </Flex>
   );
