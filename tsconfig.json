@@ -9,6 +9,7 @@
     "isolatedModules": true,
     "strict": true,
     "noFallthroughCasesInSwitch": true,
+    "typeRoots": ["./src/@types", "./node_modules/@types"],
     "moduleResolution": "node",
     "baseUrl": "./src",
     "allowSyntheticDefaultImports": true,
@@ -19,6 +20,6 @@
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*", "src/index.tsx"],
+  "include": ["src/**/*", "src/index.tsx", "src/index.d.ts"],
   "exclude": ["node_modules", "static"]
 }
