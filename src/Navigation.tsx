@@ -1,21 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
-  SpeakerPersonIcon,
   MenuIcon,
   Button,
   Flex,
   FlexItem,
-  FilesTxtIcon,
-  TenantWorkIcon,
   Segment,
-  CallIcon,
 } from '@fluentui/react-northstar';
 
 export interface IComponentClassNames {
   rootContainer: string;
   icon: string;
 }
-
 export const Navigation: React.FC = () => {
   return (
     <Flex fill column>
@@ -25,19 +21,29 @@ export const Navigation: React.FC = () => {
         </Segment>
       </FlexItem>
       <Segment>
-        <Button fluid size="largest" content="about me" />
+        <Link to="/about">
+          <Button fluid size="largest" content="about me" />
+        </Link>
       </Segment>
       <Segment>
-        <Button fluid size="largest" content="contact" />
+        <Link to="/contact">
+          <Button fluid size="largest" content="contact" />
+        </Link>
       </Segment>
       <Segment>
-        <Button fluid size="largest" content="resume" />
+        <Link to="/resume">
+          <Button fluid size="largest" content="resume" />
+        </Link>
       </Segment>
       <Segment>
-        <Button fluid size="largest" content="portfolio" />
+        <Link to="/portfolio">
+          <Button fluid size="largest" content="portfolio" />
+        </Link>
       </Segment>
       <Segment>
-        <Button fluid size="largest" content="inprint" />
+        <Link to="/imprint">
+          <Button fluid size="largest" content="imprint" />
+        </Link>
       </Segment>
     </Flex>
   );

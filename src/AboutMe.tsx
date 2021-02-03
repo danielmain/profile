@@ -182,7 +182,7 @@ export const AbountMe: React.FC = () => {
                   <Text
                     className={secondaryBoxText}
                     color="brand"
-                    content="Helping you to reach a higher test-coverage using unit-test and end-to-end tests based on Appium UI."
+                    content="Helping you to reach a higher test-coverage using unit-test and end-to-end tests based on Jest and Appium."
                   />
                 </Flex>
               </Flex>

@@ -6,9 +6,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/">
-          <Home />
-        </Route>
+        <Route path="/:page?" component={Home} />
       </Switch>
     </Router>
   );

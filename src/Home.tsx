@@ -1,16 +1,14 @@
 import React from 'react';
-import {
-  MenuButton,
-  MenuIcon,
-  Image,
-  Flex,
-  FlexItem,
-  Segment,
-} from '@fluentui/react-northstar';
+import { Image, Flex, FlexItem, Segment } from '@fluentui/react-northstar';
+import { RouteComponentProps } from 'react-router';
 import { mergeStyleSets } from '@uifabric/merge-styles';
 import ProfilePicture from './assets/profile.jpg';
 import { Navigation } from './Navigation';
 import { AbountMe } from './AboutMe';
+import { Imprint } from './Imprint';
+import { Contact } from './Contact';
+import { Portfolio } from './Portfolio';
+import { Resume } from './Resume';
 
 export interface IComponentClassNames {
   rootContainer: string;
@@ -46,14 +44,46 @@ export const getClassNames = (): IComponentClassNames => {
     },
   });
 };
-export const Home: React.FC = () => {
+
+interface MatchParams {
+  page: string;
+}
+
+type HomeProps = RouteComponentProps<MatchParams>;
+
+export const Home: React.FC<HomeProps> = ({ match }) => {
   const {
     rootContainer,
     menuContainer,
     image,
     contentContainer,
   } = getClassNames();
-  const [content, setContent] = React.useState<JSX.Element>(<AbountMe />);
+  const [content, setContent] = React.useState<JSX.Element>();
+
+  React.useEffect(() => {
+    console.log('match.params ==>', match.params);
+    switch (match.params?.page) {
+      case 'about':
+        setContent(<AbountMe />);
+        break;
+      case 'contact':
+        setContent(<Contact />);
+        break;
+      case 'resume':
+        setContent(<Resume />);
+        break;
+      case 'portfolio':
+        setContent(<Portfolio />);
+        break;
+      case 'imprint':
+        setContent(<Imprint />);
+        break;
+      default:
+        setContent(<AbountMe />);
+        break;
+    }
+  }, [match.params]);
+
   return (
     <Flex fill className={rootContainer}>
       <FlexItem>
