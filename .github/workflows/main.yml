@@ -39,7 +39,7 @@ jobs:
         with:
           azcliversion: 2.0.72
           inlineScript: |
-            az cdn endpoint purge --content-paths  "/*" --profile-name "CDN_PROFILE_NAME" --name "CDN_ENDPOINT" --resource-group "RESOURCE_GROUP"
+            az cdn endpoint purge --content-paths  "/*" --profile-name "profilecdn" --name "danielmain.azureedge.net" --resource-group "profile"
 
   # Azure logout 
       - name: logout
