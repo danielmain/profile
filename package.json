@@ -5,7 +5,7 @@
     "dev": "parcel src/index.html --out-dir build/debug",
     "build": "parcel build index.html --out-dir build/release --public-url ./",
     "start": "parcel index.html --open --port $PORT",
-    "start:dev": "NODE_ENV=development node ./node_modules/.bin/parcel index.html --open --port 3000",
+    "start:dev": "node ./node_modules/.bin/parcel index.html --open --port 3000",
     "watch": "parcel watch index.html"
   },
   "author": "",

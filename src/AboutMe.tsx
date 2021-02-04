@@ -3,6 +3,7 @@ import {
   Card,
   Flex,
   FlexItem,
+  List,
   Segment,
   CompanionIcon,
   RobotIcon,
@@ -12,8 +13,10 @@ import {
   Image,
 } from '@fluentui/react-northstar';
 import { mergeStyleSets } from '@uifabric/merge-styles';
+import CLogo from './assets/clogo.jpg';
+import JavaLogo from './assets/javalogo.png';
+import PhpLogo from './assets/phplogo.png';
 import ReactLogo from './assets/reactlogo.png';
-import ProfilePicture from './assets/profile.jpg';
 
 export interface IComponentClassNames {
   title: string;
@@ -69,6 +72,31 @@ export const getClassNames = (): IComponentClassNames => {
     },
   });
 };
+
+const items = [
+  {
+    key: 'php',
+    media: <Image src={PhpLogo} avatar />,
+    header: '3 Years coding in PHP',
+  },
+  {
+    key: 'c',
+    media: <Image src={CLogo} avatar />,
+    header: '2 Years writing almost bare metal c++',
+  },
+  {
+    key: 'java',
+    media: <Image src={JavaLogo} avatar />,
+    header: '6 Years in the dark era of object oriented in java',
+  },
+  {
+    key: 'react',
+    media: <Image src={ReactLogo} avatar />,
+    header:
+      '7 Years discovering how to write simple code in React and React Native',
+  },
+];
+
 export const AbountMe: React.FC = () => {
   const {
     title,
@@ -128,20 +156,30 @@ export const AbountMe: React.FC = () => {
             />
           </Segment>
         </FlexItem>
-        <FlexItem>
-          <Segment>
-            <Text
-              size="medium"
-              content="Having a long journey as a software developer since the year 2002, starting with PHP => C++ => Java => Javascript and ending up with ReactJs and React Native I feel confident to help and assist you with any Mobile Development related project"
-              className={paragraph}
-            />
-            <Text
-              size="medium"
-              content="In my free time besides of learning new technologies I love to play with my little son and spend time with my family"
-              className={paragraph}
-            />
-          </Segment>
-        </FlexItem>
+        <Segment>
+          <Text
+            size="medium"
+            content="Having a long journey as a software developer since the year 2002, starting with:"
+            className={paragraph}
+          />
+        </Segment>
+        <Segment>
+          <List items={items} />
+        </Segment>
+        <Segment>
+          <Text
+            size="medium"
+            content="That is why I feel confident to help and assist you with any Mobile Development related project"
+            className={paragraph}
+          />
+        </Segment>
+        <Segment>
+          <Text
+            size="medium"
+            content="In my free time besides of learning new technologies I love to play with my little son and spend time with my family"
+            className={paragraph}
+          />
+        </Segment>
         <FlexItem>
           <Text size="largest" content="my services" className={serviceTitle} />
         </FlexItem>

@@ -1,5 +1,13 @@
 import React from 'react';
-import { Flex, FlexItem, Segment, Text } from '@fluentui/react-northstar';
+import {
+  Flex,
+  FlexItem,
+  Segment,
+  Text,
+  Card,
+  CardHeader,
+  CardBody,
+} from '@fluentui/react-northstar';
 import { mergeStyleSets } from '@uifabric/merge-styles';
 
 interface IComponentClassNames {
@@ -28,15 +36,55 @@ export const Imprint: React.FC = () => {
         <FlexItem push grow>
           <Text size="largest" content="Imprint" className={title} />
         </FlexItem>
-        <FlexItem>
-          <Segment>
-            <Text
-              size="medium"
-              content="I have been working in the last 10 years in both small and big scrum teams assuming the role as lead developer, scrum master and consultant."
-              className={paragraph}
-            />
-          </Segment>
-        </FlexItem>
+        <Segment>
+          <Card>
+            <CardHeader>
+              <Flex gap="gap.small">
+                <Flex column>
+                  <Text
+                    content="Die Vorgaben von § 5 TMG sind durch die folgenden Angaben erfüllt:"
+                    weight="bold"
+                  />
+                </Flex>
+              </Flex>
+            </CardHeader>
+            <CardBody>
+              <Flex gap="gap.small">
+                <Flex column>
+                  <Text content="Daniel Main" />
+                  <Text content="Zuckerleweg 46 70374 Stuttgart" />
+                </Flex>
+              </Flex>
+            </CardBody>
+          </Card>
+        </Segment>
+        <Segment>
+          <Card>
+            <CardHeader>
+              <Flex gap="gap.small">
+                <Flex column>
+                  <Text
+                    content="Die Umsatzsteuer-Identifikation lautet:"
+                    weight="bold"
+                  />
+                </Flex>
+              </Flex>
+            </CardHeader>
+            <CardBody>DE278408110</CardBody>
+          </Card>
+        </Segment>
+        <Segment>
+          <Card>
+            <CardHeader>
+              <Flex gap="gap.small">
+                <Flex column>
+                  <Text content="Kontakt:" weight="bold" />
+                </Flex>
+              </Flex>
+            </CardHeader>
+            <CardBody>Telefon: + 49 (0) 151 201 83 0 83</CardBody>
+          </Card>
+        </Segment>
       </Flex>
     </>
   );
