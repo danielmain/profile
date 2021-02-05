@@ -19,8 +19,8 @@ export const getClassNames = (): IComponentClassNames => {
   return mergeStyleSets({
     title: {
       paddingLeft: 10,
-      fontWeight: 600,
-      fontSize: 60,
+      fontWeight: 800,
+      fontSize: 30,
     },
     paragraph: {
       paddingRight: 10,
@@ -37,7 +37,7 @@ export const Imprint: React.FC = () => {
           <Text size="largest" content="Imprint" className={title} />
         </FlexItem>
         <Segment>
-          <Card>
+          <Card elevated fluid>
             <CardHeader>
               <Flex gap="gap.small">
                 <Flex column>
@@ -59,7 +59,7 @@ export const Imprint: React.FC = () => {
           </Card>
         </Segment>
         <Segment>
-          <Card>
+          <Card elevated fluid>
             <CardHeader>
               <Flex gap="gap.small">
                 <Flex column>
@@ -74,7 +74,7 @@ export const Imprint: React.FC = () => {
           </Card>
         </Segment>
         <Segment>
-          <Card>
+          <Card elevated fluid>
             <CardHeader>
               <Flex gap="gap.small">
                 <Flex column>

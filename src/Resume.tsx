@@ -11,8 +11,8 @@ export const getClassNames = (): IComponentClassNames => {
   return mergeStyleSets({
     title: {
       paddingLeft: 10,
-      fontWeight: 600,
-      fontSize: 60,
+      fontWeight: 800,
+      fontSize: 30,
     },
     paragraph: {
       paddingRight: 10,

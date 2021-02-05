@@ -22,8 +22,8 @@ export const getClassNames = (): IComponentClassNames => {
     rootContainer: {
       height: '100vh !important',
       backgroundColor: 'black',
-      paddingLeft: 100,
-      paddingRight: 100,
+      paddingLeft: '2vh',
+      paddingRight: '2vh',
     },
     menuContainer: {
       marginTop: 30,
@@ -35,10 +35,8 @@ export const getClassNames = (): IComponentClassNames => {
       overflowY: 'auto',
     },
     image: {
-      // margin: 0,
-      // padding: 0,
       maxWidth: '30%',
-      minWidth: '29vh',
+      minWidth: '22vh',
       height: '100vh',
       objectFit: 'cover',
     },
