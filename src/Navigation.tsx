@@ -31,8 +31,8 @@ export const Navigation: React.FC = () => {
         </Link>
       </Segment>
       <Segment>
-        <Link to="/resume">
-          <Button fluid size="largest" content="resume" />
+        <Link to="/public/cv.pdf" target="_blank" download>
+          <Button fluid size="largest" content="resume"></Button>
         </Link>
       </Segment>
       <Segment>

@@ -7,12 +7,14 @@ import {
   Card,
   CardHeader,
   CardBody,
+  Image,
 } from '@fluentui/react-northstar';
 import { mergeStyleSets } from '@uifabric/merge-styles';
+import Tel from './assets/tel.png';
 
 interface IComponentClassNames {
   title: string;
-  paragraph: string;
+  tel: string;
 }
 
 export const getClassNames = (): IComponentClassNames => {
@@ -22,13 +24,14 @@ export const getClassNames = (): IComponentClassNames => {
       fontWeight: 800,
       fontSize: 30,
     },
-    paragraph: {
-      paddingRight: 10,
+    tel: {
+      maxWidth: '230px',
+      marginTop: '10px',
     },
   });
 };
 export const Imprint: React.FC = () => {
-  const { title, paragraph } = getClassNames();
+  const { title, tel } = getClassNames();
 
   return (
     <>
@@ -82,7 +85,11 @@ export const Imprint: React.FC = () => {
                 </Flex>
               </Flex>
             </CardHeader>
-            <CardBody>Telefon: + 49 (0) 151 201 83 0 83</CardBody>
+            <CardBody>
+              <Flex className={tel} hAlign="start">
+                <Image src={Tel} fluid />
+              </Flex>
+            </CardBody>
           </Card>
         </Segment>
       </Flex>

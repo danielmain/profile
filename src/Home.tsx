@@ -8,7 +8,6 @@ import { AbountMe } from './AboutMe';
 import { Imprint } from './Imprint';
 import { Contact } from './Contact';
 import { Portfolio } from './Portfolio';
-import { Resume } from './Resume';
 
 export interface IComponentClassNames {
   rootContainer: string;
@@ -66,9 +65,6 @@ export const Home: React.FC<HomeProps> = ({ match }) => {
         break;
       case 'contact':
         setContent(<Contact />);
-        break;
-      case 'resume':
-        setContent(<Resume />);
         break;
       case 'portfolio':
         setContent(<Portfolio />);

@@ -119,7 +119,7 @@ export const AbountMe: React.FC = () => {
           <Segment>
             <Text
               size="medium"
-              content="I have been working in the last 10 years in both small and big scrum teams assuming the role as lead developer, scrum master and consultant."
+              content="I have worked for the last 10 years in small and big scrum teams assuming the different roles like lead developer, scrum master and consultant."
               className={paragraph}
             />
           </Segment>
