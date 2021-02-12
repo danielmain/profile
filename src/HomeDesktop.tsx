@@ -1,10 +1,11 @@
 import React from 'react';
-import { Image, Flex, FlexItem, Segment } from '@fluentui/react-northstar';
+import { Flex, FlexItem, Image, Segment } from '@fluentui/react-northstar';
 import { RouteComponentProps } from 'react-router';
 import { mergeStyleSets } from '@uifabric/merge-styles';
+import 'office-ui-fabric-react/dist/css/fabric.css';
 import ProfilePicture from './assets/profile.jpg';
 import { Navigation } from './Navigation';
-import { AbountMe } from './AboutMe';
+import { AboutMe } from './AboutMe';
 import { Imprint } from './Imprint';
 import { Contact } from './Contact';
 import { Portfolio } from './Portfolio';
@@ -48,7 +49,12 @@ interface MatchParams {
 
 type HomeProps = RouteComponentProps<MatchParams>;
 
-export const Home: React.FC<HomeProps> = ({ match }) => {
+export const HomeDesktop: React.FC<HomeProps> = ({ match }) => {
+  if (!match) {
+    // TODO: Add error page
+    return <div>empty</div>;
+  }
+
   const {
     rootContainer,
     menuContainer,
@@ -58,10 +64,9 @@ export const Home: React.FC<HomeProps> = ({ match }) => {
   const [content, setContent] = React.useState<JSX.Element>();
 
   React.useEffect(() => {
-    console.log('match.params ==>', match.params);
-    switch (match.params?.page) {
+    switch (match?.params?.page) {
       case 'about':
-        setContent(<AbountMe />);
+        setContent(<AboutMe />);
         break;
       case 'contact':
         setContent(<Contact />);
@@ -73,16 +78,16 @@ export const Home: React.FC<HomeProps> = ({ match }) => {
         setContent(<Imprint />);
         break;
       default:
-        setContent(<AbountMe />);
+        setContent(<AboutMe />);
         break;
     }
-  }, [match.params]);
+  }, [match?.params]);
 
   return (
     <Flex fill className={rootContainer}>
       <FlexItem>
         <Segment className={menuContainer}>
-          <Navigation />
+          <Navigation selected={match.params?.page} />
         </Segment>
       </FlexItem>
       <FlexItem grow>

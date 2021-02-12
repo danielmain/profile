@@ -1,20 +1,18 @@
 import React from 'react';
 import {
   Card,
-  Grid,
+  CompanionIcon,
   Flex,
   FlexItem,
-  Segment,
-  CompanionIcon,
-  RobotIcon,
-  Text,
+  Avatar,
   PresenterIcon,
+  RobotIcon,
+  Segment,
   TableIcon,
-  Image,
+  Text,
 } from '@fluentui/react-northstar';
 import { mergeStyleSets } from '@uifabric/merge-styles';
-
-import ReactLogo from './assets/reactlogo.png';
+import ProfilePicture from './assets/profile.jpg';
 
 export interface IComponentClassNames {
   title: string;
@@ -71,26 +69,34 @@ export const getClassNames = (): IComponentClassNames => {
   });
 };
 
-export const AbountMe: React.FC = () => {
+interface AboutMeProps {
+  isMobile?: boolean;
+}
+
+export const AboutMe: React.FC<AboutMeProps> = ({ isMobile = false }) => {
   const {
     title,
     subtitle,
-    serviceTitle,
     paragraph,
     secondaryBoxText,
     devIcon,
     autoIcon,
     meetIcon,
     dbIcon,
-    image,
   } = getClassNames();
 
   return (
     <>
       <Flex gap="gap.small" padding="padding.medium" column>
-        <FlexItem push grow>
-          <Text size="largest" content="about me" className={title} />
-        </FlexItem>
+        {isMobile ? (
+          <Flex hAlign="center">
+            <Avatar size="largest" image={ProfilePicture} />
+          </Flex>
+        ) : (
+          <FlexItem push grow>
+            <Text size="largest" content="about me" className={title} />
+          </FlexItem>
+        )}
         <FlexItem>
           <Segment>
             <Text
@@ -119,13 +125,14 @@ export const AbountMe: React.FC = () => {
           <Segment>
             <Text
               size="medium"
+              align="justify"
               content="I have worked for the last 10 years in small and big scrum teams assuming the different roles like lead developer, scrum master and consultant."
               className={paragraph}
             />
           </Segment>
         </FlexItem>
         <FlexItem>
-          <Text size="largest" content="my services" className={serviceTitle} />
+          <Text size="largest" content="my services" className={title} />
         </FlexItem>
       </Flex>
       <Flex gap="gap.medium" padding="padding.medium" column>

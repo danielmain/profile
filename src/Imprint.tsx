@@ -1,13 +1,13 @@
 import React from 'react';
 import {
+  Card,
+  CardBody,
+  CardHeader,
   Flex,
   FlexItem,
+  Image,
   Segment,
   Text,
-  Card,
-  CardHeader,
-  CardBody,
-  Image,
 } from '@fluentui/react-northstar';
 import { mergeStyleSets } from '@uifabric/merge-styles';
 import Tel from './assets/tel.png';

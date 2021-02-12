@@ -2,8 +2,8 @@ import React from 'react';
 import {
   Avatar,
   Card,
-  CardHeader,
   CardBody,
+  CardHeader,
   Flex,
   FlexItem,
   Image,

@@ -1,17 +1,10 @@
 import React from 'react';
-import {
-  Card,
-  Flex,
-  FlexItem,
-  Text,
-  Image,
-  Layout,
-} from '@fluentui/react-northstar';
+import { Card, Flex, FlexItem, Image, Text } from '@fluentui/react-northstar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
+  faGithub,
   faKeybase,
   faXing,
-  faGithub,
 } from '@fortawesome/free-brands-svg-icons';
 import { faAt } from '@fortawesome/free-solid-svg-icons';
 import { mergeStyleSets } from '@uifabric/merge-styles';

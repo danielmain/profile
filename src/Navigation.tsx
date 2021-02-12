@@ -1,48 +1,106 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  MenuIcon,
   Button,
   Flex,
-  FlexItem,
   Segment,
+  TeamCreateIcon,
+  SpeakerPersonIcon,
+  EmailIcon,
+  WordColorIcon,
+  MentionIcon,
 } from '@fluentui/react-northstar';
+import { mergeStyleSets } from '@uifabric/merge-styles';
 
 export interface IComponentClassNames {
-  rootContainer: string;
-  icon: string;
+  smallContainer: string;
+  smallSegment: string;
 }
-export const Navigation: React.FC = () => {
+
+interface NavigationProps {
+  isMobile?: boolean;
+  selected?: string;
+}
+
+export const getClassNames = (): IComponentClassNames => {
+  return mergeStyleSets({
+    smallContainer: {
+      maxWidth: '55px',
+    },
+    smallSegment: {
+      backgroundColor: 'black !important',
+    },
+  });
+};
+
+export const Navigation: React.FC<NavigationProps> = ({
+  isMobile = false,
+  selected,
+}) => {
+  const { smallContainer, smallSegment } = getClassNames();
+  const containerClass = isMobile ? smallContainer : '';
+  const segmentClass = isMobile ? smallSegment : '';
+
   return (
-    <Flex fill column>
-      <FlexItem grow>
-        <Segment>
-          <Button icon={<MenuIcon size="large" />} primary />
-        </Segment>
-      </FlexItem>
-      <Segment>
+    <Flex fill column className={containerClass}>
+      <Segment className={segmentClass}>
         <Link to="/about">
-          <Button fluid size="largest" content="about me" />
+          <Button
+            fluid={!isMobile}
+            size={isMobile ? 'small' : 'large'}
+            icon={<SpeakerPersonIcon />}
+            iconOnly={isMobile}
+            content={!isMobile && 'about me'}
+            primary={selected === 'about'}
+          />
         </Link>
       </Segment>
-      <Segment>
+      <Segment className={segmentClass}>
         <Link to="/contact">
-          <Button fluid size="largest" content="contact" />
+          <Button
+            fluid={!isMobile}
+            size={isMobile ? 'small' : 'large'}
+            icon={<EmailIcon />}
+            iconOnly={isMobile}
+            content={!isMobile && 'contact'}
+            primary={selected === 'contact'}
+          />
         </Link>
       </Segment>
-      <Segment>
+      <Segment className={segmentClass}>
         <Link to="/public/cv.pdf" target="_blank" download>
-          <Button fluid size="largest" content="resume"></Button>
+          <Button
+            fluid={!isMobile}
+            size={isMobile ? 'small' : 'large'}
+            icon={<WordColorIcon />}
+            iconOnly={isMobile}
+            content={!isMobile && 'resume'}
+            primary={selected === 'resume'}
+          />
         </Link>
       </Segment>
-      <Segment>
+      <Segment className={segmentClass}>
         <Link to="/portfolio">
-          <Button fluid size="largest" content="portfolio" />
+          <Button
+            fluid={!isMobile}
+            size={isMobile ? 'small' : 'large'}
+            icon={<TeamCreateIcon />}
+            iconOnly={isMobile}
+            content={!isMobile && 'portfolio'}
+            primary={selected === 'portfolio'}
+          />
         </Link>
       </Segment>
-      <Segment>
+      <Segment className={segmentClass}>
         <Link to="/imprint">
-          <Button fluid size="largest" content="imprint" />
+          <Button
+            fluid={!isMobile}
+            size={isMobile ? 'small' : 'large'}
+            icon={<MentionIcon />}
+            iconOnly={isMobile}
+            content={!isMobile && 'imprint'}
+            primary={selected === 'imprint'}
+          />
         </Link>
       </Segment>
     </Flex>
