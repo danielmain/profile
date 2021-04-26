@@ -126,7 +126,7 @@ export const AboutMe: React.FC<AboutMeProps> = ({ isMobile = false }) => {
             <Text
               size="medium"
               align="justify"
-              content="I have worked for the last 10 years in small and big scrum teams assuming the different roles like lead developer, scrum master and consultant."
+              content="I have worked for the last 10 years in small and big scrum teams assuming different roles like lead developer, scrum master and consultant."
               className={paragraph}
             />
           </Segment>
