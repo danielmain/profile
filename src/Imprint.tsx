@@ -37,7 +37,11 @@ export const Imprint: React.FC = () => {
     <>
       <Flex gap="gap.small" padding="padding.medium" column>
         <FlexItem push grow>
-          <Text size="largest" content="Imprint" className={title} />
+          <Text
+            size="largest"
+            content="Imprint (German only)"
+            className={title}
+          />
         </FlexItem>
         <Segment>
           <Card elevated fluid>
