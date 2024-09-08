@@ -1,5 +1,5 @@
 # Daniel Main
-## Full-Stack Developer & Software Architect
+## Technical Lead & Full-Stack Developer & Software Architect
 
 ## Contact Information
 Email: cv@funktional.dev
