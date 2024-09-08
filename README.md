@@ -2,11 +2,11 @@
 ## Technical Lead & Full-Stack Developer & Software Architect
 
 ## Contact Information
-Email: cv@funktional.dev
-Address: Stuttgart, Germany
-Birthdate: 8th March 1980
-Nationality: German
-Civil status: Married
+- Email: cv@funktional.dev
+- Address: Stuttgart, Germany
+- Birthdate: 8th March 1980
+- Nationality: German
+- Civil status: Married
 
 ## Professional Summary
 Versatile Full-Stack Developer and Software Architect with over 20 years of experience across diverse industries including blockchain, automotive, healthcare technology, fintech, and sustainability. Proven track record in designing and implementing complex software solutions, leading development teams, and driving technological innovation. Proficient in a wide range of technologies and frameworks, with a strong focus on delivering high-quality, scalable applications. Experienced in agile methodologies and team leadership.
