@@ -6,13 +6,9 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    flake-utils,
-  }:
-    flake-utils.lib.eachDefaultSystem (
-      system: let
+  outputs = { self, nixpkgs, flake-utils }:
+    flake-utils.lib.eachDefaultSystem (system:
+      let
         pkgs = nixpkgs.legacyPackages.${system};
         haskellPackages = pkgs.haskellPackages;
       in {
@@ -22,12 +18,18 @@
             cabal-install
             haskell-language-server
             scotty
-            blaze-html
-            pkgs.zlib # Add zlib system library
+            lucid
+            clay
+            shelly
+            zlib
+            pkgs.zlib
+            pkgs.pkg-config
+            pkgs.nodejs
+            pkgs.nodePackages.npm
           ];
-          # Set up pkg-config to find zlib
           shellHook = ''
-            export PKG_CONFIG_PATH="${pkgs.zlib.dev}/lib/pkgconfig:$PKG_CONFIG_PATH"
+            export LD_LIBRARY_PATH=${pkgs.zlib}/lib:$LD_LIBRARY_PATH
+            export PKG_CONFIG_PATH=${pkgs.zlib.dev}/lib/pkgconfig:$PKG_CONFIG_PATH
           '';
         };
 

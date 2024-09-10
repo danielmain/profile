@@ -2,13 +2,18 @@ name:                haskell-profile
 version:             0.1.0.0
 build-type:          Simple
 cabal-version:       >=1.10
+data-files:
+    README.md
+    static/output.css
 
 executable haskell-profile
   main-is:             Main.hs
   build-depends:       base >= 4.7 && < 5
                      , scotty
-                     , blaze-html
+                     , lucid
+                     , shelly
+                     , system-filepath
+                     , clay
                      , text
   hs-source-dirs:      app
   default-language:    Haskell2010
-  extra-libraries:     z
