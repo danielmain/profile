@@ -31,9 +31,13 @@ Versatile Full-Stack Developer and Software Architect with over 20 years of expe
 
 ### Mobile Application Developer
 **HeidelbergCement - HConnect GmbH** | Heidelberg, Germany | Oct 2019 - Dec 2020
-- Developed and supported the 'OnSite' mobile application using React-Native
-- Implemented Redux Thunk, TypeScript, React Query, and Firebase Configuration
-- Application available globally on iOS App Store and Google Play Store
+
+* Contributed to the development and support of 'OnSite', a React-Native mobile app used in the construction industry for real-time tracking of cement trucks.
+* Implemented features using Redux Thunk, TypeScript, React Query, and Firebase.
+* App available globally on iOS and Android:
+    * [Google Play Store](https://play.google.com/store/apps/details?id=com.heidelbergcement.rmc.mycrete.us&hl=de)
+    * [App Store](https://apps.apple.com/de/app/onsite-by-hconnect/id1394075788)
+
 
 ### Open Source Project: Shitcoin Trader
 **Personal Project** | Remote | Feb 2019 - Present
@@ -42,9 +46,13 @@ Versatile Full-Stack Developer and Software Architect with over 20 years of expe
 
 ### Software Architect & Full-stack Developer
 **Freimuth & Graf Consulting UG** | Germany | Apr 2017 - Nov 2018
-- Designed the architecture and chose the technology stack for an advanced e-Learning platform
-- Led development as Software Architect and Scrum Master for a team of four
-- Implemented solution using MeteorJS, MongoDB, AWS Lambda, ReactJS, and ReactNative/Redux
+
+* Designed the architecture and chose the technology stack (MeteorJS, MongoDB, AWS Lambda, ReactJS, ReactNative/Redux) for an advanced e-Learning platform.
+* Led the development team of four as both Software Architect and Scrum Master.
+* **NELA App:**
+    * Designed and led the development of this E-Learning platform, facilitating communication and language exercise solutions between students and teachers.
+    * [Google Play Store](https://play.google.com/store/apps/details?id=academy.nela)
+    * [App Store](https://apps.apple.com/de/app/nela-new-language-academy/id1520034158)
 
 ### Automotive Javascript Developer
 **UID GmbH** | Ludwigsburg, Germany | Dec 2015 - Jun 2016
