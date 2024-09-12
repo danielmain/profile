@@ -40,7 +40,7 @@ Versatile Full-Stack Developer and Software Architect with over 20 years of expe
 
 
 ### Open Source Project: Shitcoin Trader
-**Personal Project** | Remote | Feb 2019 - Present
+**Personal Project** | Remote | Feb 2019 - September 2019
 - Created an Electron/ReactJS based application for cryptocurrency trading
 - Implemented Electron-IPC communication, NeDB, and Redux for state management
 
