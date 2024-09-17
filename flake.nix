@@ -16,7 +16,8 @@
             binaryen
             protobuf
             nodejs_22
-            openssl.dev # Add this line to include OpenSSL development libraries
+            openssl.dev
+            rustfmt
           ];
 
           # Set PKG_CONFIG_PATH to ensure OpenSSL is found

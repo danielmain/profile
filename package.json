@@ -4,7 +4,8 @@
   "description": "- Email: cv@funktional.dev\r - Address: Stuttgart, Germany\r - Birthdate: 8th March 1980\r - Nationality: German\r - Civil status: Married",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./public/tailwind.css --watch"
   },
   "author": "",
   "license": "ISC",
