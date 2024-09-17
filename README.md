@@ -1,5 +1,5 @@
 # Daniel Main
-## Technical Lead & Full-Stack Developer & Software Architect
+**Technical Lead & Full-Stack Developer & Software Architect**
 
 ## Contact Information
 - Email: cv@funktional.dev
@@ -15,26 +15,44 @@ Versatile Full-Stack Developer and Software Architect with over 20 years of expe
 
 ### Tech Lead, Blockchain Technologies for Daedalus and Lace.io Projects
 **Input Output (IOHK)** | Remote | May 2021 - Present
-- Lead a team of 13 professionals in developing Daedalus and Lace Wallet
-- Oversee review, design, development, release process, and documentation
-- Utilize technologies including React, TypeScript, ElectronJs, and Nix/NixOS
+
+- Initially led a team of 13 professionals in developing the Daedalus wallet
+- Transitioned to lead a smaller, focused team for the Lace wallet project
+- Successfully mentored and helped 3 direct reports achieve promotions
+- Involved in the technical analysis for the acquisition of Nami wallet
+
+- Led several key initiatives and projects:
+  * Spearheaded the creation of multiple proof-of-concepts to add CIP-30 (dapp connection) support on Lace desktop
+  * Successfully led the squad that implemented the multi-delegation feature on Lace
+  * Directed the team responsible for implementing the multi-sig feature on Lace
+  * Led the squad that developed the beta version of the dapp-store for Lace, following the CIP-72 specification
+  * Created a prototype using a local LLM to moderate dapp registration by parsing web content and recognizing potentially illegal activities (e.g., selling drugs/weapons, offering pornography)
+- Utilized technologies including React, TypeScript, ElectronJs, and Nix/NixOS
 
 ### Mobile Application Developer
 **HeidelbergCement - HConnect GmbH** | Heidelberg, Germany | Oct 2019 - Dec 2020
-- Developed and supported the 'OnSite' mobile application using React-Native
-- Implemented Redux Thunk, TypeScript, React Query, and Firebase Configuration
-- Application available globally on iOS App Store and Google Play Store
+
+* Contributed to the development and support of 'OnSite', a React-Native mobile app used in the construction industry for real-time tracking of cement trucks.
+* Implemented features using Redux Thunk, TypeScript, React Query, and Firebase.
+* App available globally on iOS and Android:
+  * [Google Play Store](https://play.google.com/store/apps/details?id=com.heidelbergcement.rmc.mycrete.us&hl=de)
+  * [App Store](https://apps.apple.com/de/app/onsite-by-hconnect/id1394075788)
+
 
 ### Open Source Project: Shitcoin Trader
-**Personal Project** | Remote | Feb 2019 - Present
+**Personal Project** | Remote | Feb 2019 - September 2019
 - Created an Electron/ReactJS based application for cryptocurrency trading
 - Implemented Electron-IPC communication, NeDB, and Redux for state management
 
 ### Software Architect & Full-stack Developer
 **Freimuth & Graf Consulting UG** | Germany | Apr 2017 - Nov 2018
-- Designed the architecture and chose the technology stack for an advanced e-Learning platform
-- Led development as Software Architect and Scrum Master for a team of four
-- Implemented solution using MeteorJS, MongoDB, AWS Lambda, ReactJS, and ReactNative/Redux
+
+* Designed the architecture and chose the technology stack (MeteorJS, MongoDB, AWS Lambda, ReactJS, ReactNative/Redux) for an advanced e-Learning platform.
+* Led the development team of four as both Software Architect and Scrum Master.
+* **NELA App:**
+  * Designed and led the development of this E-Learning platform, facilitating communication and language exercise solutions between students and teachers.
+  * [Google Play Store](https://play.google.com/store/apps/details?id=academy.nela)
+  * [App Store](https://apps.apple.com/de/app/nela-new-language-academy/id1520034158)
 
 ### Automotive Javascript Developer
 **UID GmbH** | Ludwigsburg, Germany | Dec 2015 - Jun 2016
@@ -85,6 +103,9 @@ Versatile Full-Stack Developer and Software Architect with over 20 years of expe
 - Implemented Internet banking portal for 'Banco Falabella' using Oracle technologies
 
 ## Skills
+- Leadership and Mentoring
+- Proof-of-Concept Development
+- LLM Integration and Application
 - Programming Languages: TypeScript, JavaScript (ES6/NodeJS), Java, C++, PHP, Perl, Solidity
 - Frontend Frameworks: React, Redux, AngularJS, jQuery, Lodash, D3.js, Electron
 - Backend Frameworks: MeteorJS, ExpressJS, Spring (Core, Security, MVC), Hibernate, OSGI
@@ -101,7 +122,7 @@ Versatile Full-Stack Developer and Software Architect with over 20 years of expe
 - Sustainability Software: Life Cycle Assessment (LCA)
 
 ## Industry Expertise
-- Blockchain: Wallet development, smart contracts, cryptocurrency trading platforms
+- Blockchain: Wallet development (including multi-signature and multi-delegation features), smart contracts, cryptocurrency trading platforms, dapp ecosystems
 - Automotive: Infotainment systems, after-sales portals
 - Healthcare Technology: Embedded systems for insurance card readers, electronic prescription systems
 - Fintech: Internet banking, cryptocurrency trading
