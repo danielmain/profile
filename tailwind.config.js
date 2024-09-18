@@ -9,6 +9,7 @@ module.exports = {
   plugins: [
     require('daisyui'),
     require('@tailwindcss/typography'),
+    require('tailwindcss-animated'),
     function({ addBase, theme }) {
       addBase({
         '.prose': {

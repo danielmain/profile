@@ -30,7 +30,7 @@ fn app() -> Element {
 
             // Scrollable content container
             div {
-                class: "w-3/4 mt-7 overflow-y-auto p-10 bg-base-300 shadow-lg rounded-lg relative z-10 max-h-[calc(100vh-3.5rem)]",
+                class: "animate-fade-down animate-ease-in w-3/4 mt-7 overflow-y-auto p-10 bg-base-300 shadow-2xl shadow-inner rounded-lg relative z-10 max-h-[calc(100vh-3.5rem)]",
                 div {
                     // Title and subtitle
                     h1 {

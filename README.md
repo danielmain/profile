@@ -13,23 +13,26 @@ Versatile Full-Stack Developer and Software Architect with over 20 years of expe
 ### Tech Lead, Blockchain Technologies for Daedalus and Lace.io Projects
 **Input Output (IOHK)** | Remote | May 2021 - Present
 
-- Initially led a team of 13 professionals in developing the Daedalus wallet
-- Transitioned to lead a smaller, focused team for the Lace wallet project
+- Initially led a team of 13 professionals in developing the [Daedalus wallet](https://daedaluswallet.io/team)
+- Transitioned to lead a smaller, focused team for the [Lace wallet project](https://lace.io)
 - Successfully mentored and helped 3 direct reports achieve promotions
 - Involved in the technical analysis for the acquisition of Nami wallet
 
 - Led several key initiatives and projects:
   * Spearheaded the creation of multiple proof-of-concepts to add CIP-30 (dapp connection) support on Lace desktop
-  * Successfully led the squad that implemented the multi-delegation feature on Lace
+  * Successfully led the squad that implemented the [multi-delegation feature on Lace](https://www.lace.io/blog/stake-your-ada-across-multiple-pools-with-lace-s-new-multi-delegation-feature-beta)
   * Directed the team responsible for implementing the multi-sig feature on Lace
-  * Led the squad that developed the beta version of the dapp-store for Lace, following the CIP-72 specification
-  * Created a prototype using a local LLM to moderate dapp registration by parsing web content and recognizing potentially illegal activities (e.g., selling drugs/weapons, offering pornography)
+  * Led the squad that developed the beta version of the dapp-store for Lace, [co-authoring the CIP-72 specification](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0072)
+  * Created a prototype using a local LLM to moderate dapp registration by parsing web content and recognizing potentially illegal activities (e.g., selling drugs/weapons, offering pornography without 18+ age verification, etc.)
 - Utilized technologies including React, TypeScript, ElectronJs, and Nix/NixOS
 
 ### Mobile Application Developer
 **HeidelbergCement - HConnect GmbH** | Heidelberg, Germany | Oct 2019 - Dec 2020
 
 * Contributed to the development and support of 'OnSite', a React-Native mobile app used in the construction industry for real-time tracking of cement trucks.
+
+![OnSite](./assets/onsite.png "OnSite")
+
 * Implemented features using Redux Thunk, TypeScript, React Query, and Firebase.
 * App available globally on iOS and Android:
   * [Google Play Store](https://play.google.com/store/apps/details?id=com.heidelbergcement.rmc.mycrete.us&hl=de)
