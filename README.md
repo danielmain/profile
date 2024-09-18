@@ -1,12 +1,9 @@
-# Daniel Main
-## Technical Lead & Full-Stack Developer & Software Architect
-
 ## Contact Information
-- Email: cv@funktional.dev
-- Address: Stuttgart, Germany
-- Birthdate: 8th March 1980
-- Nationality: German
-- Civil status: Married
+- **Email**: cv@funktional.dev
+- **Address**: Stuttgart, Germany
+- **Birthdate**: 8th March 1980
+- **Nationality**: German
+- **Civil status**: Married
 
 ## Professional Summary
 Versatile Full-Stack Developer and Software Architect with over 20 years of experience across diverse industries including blockchain, automotive, healthcare technology, fintech, and sustainability. Proven track record in designing and implementing complex software solutions, leading development teams, and driving technological innovation. Proficient in a wide range of technologies and frameworks, with a strong focus on delivering high-quality, scalable applications. Experienced in agile methodologies and team leadership.
@@ -16,23 +13,26 @@ Versatile Full-Stack Developer and Software Architect with over 20 years of expe
 ### Tech Lead, Blockchain Technologies for Daedalus and Lace.io Projects
 **Input Output (IOHK)** | Remote | May 2021 - Present
 
-- Initially led a team of 13 professionals in developing the Daedalus wallet
-- Transitioned to lead a smaller, focused team for the Lace wallet project
+- Initially led a team of 13 professionals in developing the [Daedalus wallet](https://daedaluswallet.io/team)
+- Transitioned to lead a smaller, focused team for the [Lace wallet project](https://lace.io)
 - Successfully mentored and helped 3 direct reports achieve promotions
 - Involved in the technical analysis for the acquisition of Nami wallet
 
 - Led several key initiatives and projects:
     * Spearheaded the creation of multiple proof-of-concepts to add CIP-30 (dapp connection) support on Lace desktop
-    * Successfully led the squad that implemented the multi-delegation feature on Lace
+    * Successfully led the squad that implemented the [multi-delegation feature on Lace](https://www.lace.io/blog/stake-your-ada-across-multiple-pools-with-lace-s-new-multi-delegation-feature-beta)
     * Directed the team responsible for implementing the multi-sig feature on Lace
-    * Led the squad that developed the beta version of the dapp-store for Lace, following the CIP-72 specification
-    * Created a prototype using a local LLM to moderate dapp registration by parsing web content and recognizing potentially illegal activities (e.g., selling drugs/weapons, offering pornography)
+    * Led the squad that developed the beta version of the dapp-store for Lace, [co-authoring the CIP-72 specification](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0072)
+    * Created a prototype using a local LLM to moderate dapp registration by parsing web content and recognizing potentially illegal activities (e.g., selling drugs/weapons, offering pornography without 18+ age verification, etc.)
 - Utilized technologies including React, TypeScript, ElectronJs, and Nix/NixOS
 
 ### Mobile Application Developer
 **HeidelbergCement - HConnect GmbH** | Heidelberg, Germany | Oct 2019 - Dec 2020
 
 * Contributed to the development and support of 'OnSite', a React-Native mobile app used in the construction industry for real-time tracking of cement trucks.
+
+![OnSite](./assets/onsite.png "OnSite")
+
 * Implemented features using Redux Thunk, TypeScript, React Query, and Firebase.
 * App available globally on iOS and Android:
     * [Google Play Store](https://play.google.com/store/apps/details?id=com.heidelbergcement.rmc.mycrete.us&hl=de)
@@ -90,9 +90,9 @@ Versatile Full-Stack Developer and Software Architect with over 20 years of expe
 - Technical Project Manager: Managed client relationships, provided technical consulting, and oversaw project financials
 - CMS Software Developer: Developed and maintained content management systems, conducted client training
 - Q.A. and C++ Software Developer for ICW:
-  - Developed a test framework using Visual Studio C++ for an SDK library controlling insurance-card-reader terminals
-  - Created software for embedded systems in the healthcare sector, integrating with ICW's cloud-based electronic prescription system
-  - Utilized technologies including Java, OSGI, XML-SOAP Web Services, and worked with embedded systems
+    - Developed a test framework using Visual Studio C++ for an SDK library controlling insurance-card-reader terminals
+    - Created software for embedded systems in the healthcare sector, integrating with ICW's cloud-based electronic prescription system
+    - Utilized technologies including Java, OSGI, XML-SOAP Web Services, and worked with embedded systems
 
 ### Junior PHP Developer
 **Sedo GmbH** | Köln, Germany | Jan 2005 - Sep 2005
@@ -137,8 +137,8 @@ Versatile Full-Stack Developer and Software Architect with over 20 years of expe
 - RedHat RHCT (Cert. Number: 609003180807490)
 
 ## Education
-**INACAP - Universidad Tecnológica de Chile** | Mar 1998 - Sep 2003
-Diplom Ingenieur "Computer Science"
+**INACAP - Universidad Tecnológica de Chile** | Mar 1998 - Sep 2003 |
+Bachelor Computer Science
 
 ## Languages
 - Spanish: Native
@@ -147,3 +147,4 @@ Diplom Ingenieur "Computer Science"
 
 ## Additional Training
 - Oracle 9i SQL/PLSQL (Oracle University, Santiago de Chile, 2003)
+- Ethereum smart contract development (ERC-20 and ERC-721) at Ivan on Tech
