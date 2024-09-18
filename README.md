@@ -19,11 +19,11 @@ Versatile Full-Stack Developer and Software Architect with over 20 years of expe
 - Involved in the technical analysis for the acquisition of Nami wallet
 
 - Led several key initiatives and projects:
-  * Spearheaded the creation of multiple proof-of-concepts to add CIP-30 (dapp connection) support on Lace desktop
-  * Successfully led the squad that implemented the [multi-delegation feature on Lace](https://www.lace.io/blog/stake-your-ada-across-multiple-pools-with-lace-s-new-multi-delegation-feature-beta)
-  * Directed the team responsible for implementing the multi-sig feature on Lace
-  * Led the squad that developed the beta version of the dapp-store for Lace, [co-authoring the CIP-72 specification](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0072)
-  * Created a prototype using a local LLM to moderate dapp registration by parsing web content and recognizing potentially illegal activities (e.g., selling drugs/weapons, offering pornography without 18+ age verification, etc.)
+    * Spearheaded the creation of multiple proof-of-concepts to add CIP-30 (dapp connection) support on Lace desktop
+    * Successfully led the squad that implemented the [multi-delegation feature on Lace](https://www.lace.io/blog/stake-your-ada-across-multiple-pools-with-lace-s-new-multi-delegation-feature-beta)
+    * Directed the team responsible for implementing the multi-sig feature on Lace
+    * Led the squad that developed the beta version of the dapp-store for Lace, [co-authoring the CIP-72 specification](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0072)
+    * Created a prototype using a local LLM to moderate dapp registration by parsing web content and recognizing potentially illegal activities (e.g., selling drugs/weapons, offering pornography without 18+ age verification, etc.)
 - Utilized technologies including React, TypeScript, ElectronJs, and Nix/NixOS
 
 ### Mobile Application Developer
@@ -35,8 +35,8 @@ Versatile Full-Stack Developer and Software Architect with over 20 years of expe
 
 * Implemented features using Redux Thunk, TypeScript, React Query, and Firebase.
 * App available globally on iOS and Android:
-  * [Google Play Store](https://play.google.com/store/apps/details?id=com.heidelbergcement.rmc.mycrete.us&hl=de)
-  * [App Store](https://apps.apple.com/de/app/onsite-by-hconnect/id1394075788)
+    * [Google Play Store](https://play.google.com/store/apps/details?id=com.heidelbergcement.rmc.mycrete.us&hl=de)
+    * [App Store](https://apps.apple.com/de/app/onsite-by-hconnect/id1394075788)
 
 
 ### Open Source Project: Shitcoin Trader
@@ -50,9 +50,9 @@ Versatile Full-Stack Developer and Software Architect with over 20 years of expe
 * Designed the architecture and chose the technology stack (MeteorJS, MongoDB, AWS Lambda, ReactJS, ReactNative/Redux) for an advanced e-Learning platform.
 * Led the development team of four as both Software Architect and Scrum Master.
 * **NELA App:**
-  * Designed and led the development of this E-Learning platform, facilitating communication and language exercise solutions between students and teachers.
-  * [Google Play Store](https://play.google.com/store/apps/details?id=academy.nela)
-  * [App Store](https://apps.apple.com/de/app/nela-new-language-academy/id1520034158)
+    * Designed and led the development of this E-Learning platform, facilitating communication and language exercise solutions between students and teachers.
+    * [Google Play Store](https://play.google.com/store/apps/details?id=academy.nela)
+    * [App Store](https://apps.apple.com/de/app/nela-new-language-academy/id1520034158)
 
 ### Automotive Javascript Developer
 **UID GmbH** | Ludwigsburg, Germany | Dec 2015 - Jun 2016
@@ -90,9 +90,9 @@ Versatile Full-Stack Developer and Software Architect with over 20 years of expe
 - Technical Project Manager: Managed client relationships, provided technical consulting, and oversaw project financials
 - CMS Software Developer: Developed and maintained content management systems, conducted client training
 - Q.A. and C++ Software Developer for ICW:
-  - Developed a test framework using Visual Studio C++ for an SDK library controlling insurance-card-reader terminals
-  - Created software for embedded systems in the healthcare sector, integrating with ICW's cloud-based electronic prescription system
-  - Utilized technologies including Java, OSGI, XML-SOAP Web Services, and worked with embedded systems
+    - Developed a test framework using Visual Studio C++ for an SDK library controlling insurance-card-reader terminals
+    - Created software for embedded systems in the healthcare sector, integrating with ICW's cloud-based electronic prescription system
+    - Utilized technologies including Java, OSGI, XML-SOAP Web Services, and worked with embedded systems
 
 ### Junior PHP Developer
 **Sedo GmbH** | Köln, Germany | Jan 2005 - Sep 2005
