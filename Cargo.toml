@@ -8,3 +8,6 @@ dioxus = { version = "0.5.6", features = ["web"] }
 dioxus-web = "0.5.6"
 comrak = "0.28.0"
 manganis = "0.2.2"
+
+[build-dependencies]
+dioxus-cli = "0.5.1"
